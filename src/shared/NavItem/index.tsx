@@ -14,10 +14,12 @@ const NavItem = ({ name = "", href = "/", icon }: NavItemProps) => {
     const currentPath = usePathname();
 
     return (
-        <li className='site-header__item mb-1'>
+        <li className='site-header__item mb-1 lg:mb-0 lg:mr-5 last:mr-0'>
             <Link
                 className={`${
-                    href === currentPath ? "bg-slate-300" : "hover:bg-slate-200"
+                    href === currentPath
+                        ? "bg-(--color-primary) text-(--color-text-secondary)"
+                        : "hover:bg-(--color-hover)"
                 } site-header__link flex items-center gap-3 px-4 py-3 rounded-lg transition-colors leading-0`}
                 href={href}>
                 {icon && icon}

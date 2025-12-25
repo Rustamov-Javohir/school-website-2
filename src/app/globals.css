@@ -3,11 +3,18 @@
 /* ROOT */
 :root {
     --color-bg: #ffffff;
-    --color-surface: #f1f5f9;
-    --color-primary: #1d4289;
+    --color-surface: #f1f5f9; /**/
+    --color-hover: #dddff3;
+    --color-primary: #303f9f;
     --color-text-primary: #000000;
     --color-text-secondary: #ffffff;
 }
+
+/* --main-color: #408fc2;
+    --main-color: #1d4289;
+    --main-hover-color: #204b9d;
+    --main-bg-color: #fff;
+    --main-secondary-bg-color: #f5f7fb; */
 
 html[data-theme="dark"] {
     --color-bg: #171717;
@@ -30,7 +37,7 @@ html {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     html {
         font-size: 16px;
     }
@@ -52,6 +59,7 @@ body {
     background: var(--color-bg);
     color: var(--color-text-primary);
     position: relative;
+    -webkit-overflow-scrolling: touch;
 }
 
 img {
@@ -77,8 +85,8 @@ img {
     max-width: 1240px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
 }
 
 ul,
@@ -86,11 +94,6 @@ ol {
     list-style-type: none;
 }
 
-/* --main-color: #408fc2;
-    --main-color: #1d4289;
-    --main-hover-color: #204b9d;
-    --main-bg-color: #fff;
-    --main-secondary-bg-color: #f5f7fb; */
 .loader {
     position: fixed;
     inset: 0;
