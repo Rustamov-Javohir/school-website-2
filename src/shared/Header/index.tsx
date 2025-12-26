@@ -48,7 +48,7 @@ const Header = () => {
                                 Menu
                             </h2>
                             <button onClick={() => setIsChecked(false)}>
-                                <X className='hover:bg-slate-200 active:bg-slate-300 rounded-md w-14 h-14 cursor-pointer' />
+                                <X className='hover:bg-slate-200 active:bg-slate-300 rounded-md cursor-pointer' />
                             </button>
                         </div>
                         <nav className='sidebar__nav space-y-1 flex-1 overflow-y-auto'>
@@ -89,7 +89,7 @@ const Header = () => {
                     <button
                         className='site-header__toggle lg:hidden'
                         onClick={() => setIsChecked(true)}>
-                        <Menu className='hover:bg-slate-200 active:bg-slate-300 rounded-xs w-14 h-14 cursor-pointer' />
+                        <Menu className='hover:bg-slate-200 active:bg-slate-300 rounded-xs cursor-pointer' />
                     </button>
                 </div>
             </Container>
